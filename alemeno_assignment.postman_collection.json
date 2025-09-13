@@ -1,0 +1,175 @@
+{
+	"info": {
+		"_postman_id": "a97a2ab0-1bbe-4f8f-97ff-41d79d9fc444",
+		"name": "alemeno_assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46072917",
+		"_collection_link": "https://damanjeetsingh-4055500.postman.co/workspace/Damanjeet-Singh's-Workspace~6677ce54-c634-404f-841f-ac49fe3e9a5c/collection/46072917-a97a2ab0-1bbe-4f8f-97ff-41d79d9fc444?action=share&source=collection_link&creator=46072917"
+	},
+	"item": [
+		{
+			"name": "register customer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"first_name\": \"Jane\",\r\n  \"last_name\": \"Doe\",\r\n  \"age\": 30,\r\n  \"monthly_salary\": 50000,\r\n  \"phone_number\": \"9876543210\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/register/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"register",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "view loans",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/view-loans/948/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"view-loans",
+						"948",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "view loan",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/view-loan/2295/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"view-loan",
+						"2295",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "check eligibility",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"customer_id\":948,\r\n  \"loan_amount\": 100000,\r\n  \"interest_rate\":10,\r\n  \"tenure\":10\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/check-eligibility/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"check-eligibility",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create loan",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"customer_id\":601,\r\n  \"loan_amount\": 100000,\r\n  \"interest_rate\":12,\r\n  \"tenure\":10\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/create-loan/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"create-loan",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "seed data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "customers",
+							"type": "file",
+							"src": "/E:/projects/alemeno/assets/customer_data.xlsx"
+						},
+						{
+							"key": "loans",
+							"type": "file",
+							"src": "/E:/projects/alemeno/assets/loan_data.xlsx"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/seed-data/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"seed-data",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

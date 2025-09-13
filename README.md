@@ -23,6 +23,9 @@ It is built with:
 
 ---
 
+## Video Recording
+- https://drive.google.com/file/d/1mBdBLzo-sMgevSSjaT7Mb-DnLK86_MV6/view?usp=sharing
+
 ## Table of Contents
 
 - [API Documentation](./docs/api.md)

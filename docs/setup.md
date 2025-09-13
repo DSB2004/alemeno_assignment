@@ -93,3 +93,21 @@
 ```bash
     python manage.py runserver
 ```
+
+### Running Using Docker
+
+**Note**
+
+- Please make sure you have docker installed in your local development environment
+
+- Build Docker Image
+
+```bash
+    docker-compose build
+```
+
+- Start Docker Image:
+
+```bash
+    docker-compose up
+```
